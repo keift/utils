@@ -1,0 +1,34 @@
+{
+  "name": "@keift/utils",
+  "version": "1.0.0",
+  "description": "Many useful tools.",
+  "license": "MIT",
+  "homepage": "https://github.com/keift/utils",
+  "bugs": "https://github.com/keift/utils/issues",
+  "main": "./dist/main.js",
+  "module": "./dist/main.mjs",
+  "types": "./dist/main.d.ts",
+  "scripts": {
+    "tests": "bun run lint && bun test",
+    "build": "tsup",
+    "prettier": "prettier --write ./",
+    "lint": "eslint ./"
+  },
+  "dependencies": {
+    "@types/lodash.merge": "^4.6.9",
+    "dayjs": "^1.11.19",
+    "lodash.merge": "^4.6.2"
+  },
+  "devDependencies": {
+    "neatlint": "latest",
+    "prettier": "latest",
+    "tsup": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keift/utils"
+  },
+  "keywords": [
+    "utils"
+  ]
+}
