@@ -13,7 +13,7 @@
 
 <div align="center">
   <br/>
-  <p style="font-size: 350px">Keift Utils</p>
+  <p width="350px">Keift Utils</p>
   <br/>
   <br/>
   <img src="https://img.shields.io/npm/v/@keift/utils?label=version&color=%23633BFF"/>
