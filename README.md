@@ -13,7 +13,7 @@
 
 <div align="center">
   <br/>
-  # Keift Utils
+  <h1>Keift Utils</h1>
   <br/>
   <br/>
   <img src="https://img.shields.io/npm/v/typof?label=version&color=%23633BFF"/>
