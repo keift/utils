@@ -13,11 +13,11 @@
 
 <div align="center">
   <br/>
-  <h1>Keift Utils</h1>
+  <h2>Keift Utils</h2>
   <br/>
   <br/>
-  <img src="https://img.shields.io/npm/v/typof?label=version&color=%23633BFF"/>
-  <img src="https://img.shields.io/npm/l/typof?label=license&color=%23633BFF"/>
-  <img src="https://img.shields.io/npm/dt/typof?label=downloads&color=%2300927F"/>
-  <img src="https://img.shields.io/npm/unpacked-size/typof?label=size&color=%2300927F"/>
+  <img src="https://img.shields.io/npm/v/@keift/utils?label=version&color=%23633BFF"/>
+  <img src="https://img.shields.io/npm/l/@keift/utils?label=license&color=%23633BFF"/>
+  <img src="https://img.shields.io/npm/dt/@keift/utils?label=downloads&color=%2300927F"/>
+  <img src="https://img.shields.io/npm/unpacked-size/@keift/utils?label=size&color=%2300927F"/>
 </div>
