@@ -1,3 +1,3 @@
-export * from './barrels/Utils.barrel';
+export * from './exports/Utils.export';
 
-export type * from './barrels/Types.barrel';
+export type * from './exports/Types.export';
