@@ -1,2 +1,2 @@
-export { Debug } from '../utils/Debug.util';
+export { Log } from '../utils/Log.util';
 export { Styles } from '../utils/Styles.util';

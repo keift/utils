@@ -3,15 +3,15 @@ import merge from 'lodash.merge';
 
 import { Styles } from './Styles.util';
 
-import { DebugOptionsDefault } from '../defaults/DebugOptions.default';
+import { LogOptionsDefault } from '../defaults/LogOptions.default';
 
-import type { DebugOptions } from '../types/DebugOptions.type';
+import type { LogOptions } from '../types/LogOptions.type';
 
-export class Debug {
-  private readonly options: DebugOptions;
+export class Log {
+  private readonly options: LogOptions;
 
-  public constructor(options: DebugOptions = DebugOptionsDefault) {
-    this.options = merge({}, DebugOptionsDefault, options);
+  public constructor(options: LogOptions = LogOptionsDefault) {
+    this.options = merge({}, LogOptionsDefault, options);
   }
 
   public info(message: string) {
