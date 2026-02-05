@@ -15,8 +15,8 @@
   <h1>Keift Utils</h1>
   <br/>
   <br/>
-  <img src="https://img.shields.io/npm/v/@keift/utils?label=version&color=2b7fff"/>
-  <img src="https://img.shields.io/npm/l/@keift/utils?label=license&color=2b7fff"/>
+  <img src="https://img.shields.io/npm/v/@keift/utils?label=version&color=615fff"/>
+  <img src="https://img.shields.io/npm/l/@keift/utils?label=license&color=615fff"/>
   <img src="https://img.shields.io/npm/dt/@keift/utils?label=downloads&color=00bc7d"/>
   <img src="https://img.shields.io/npm/unpacked-size/@keift/utils?label=size&color=00bc7d"/>
 </div>
