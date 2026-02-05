@@ -15,9 +15,12 @@
     "lint": "eslint ./"
   },
   "dependencies": {
+    "@types/culori": "^4.0.1",
     "@types/lodash.merge": "^4.6.9",
+    "culori": "^4.0.2",
     "dayjs": "^1.11.19",
-    "lodash.merge": "^4.6.2"
+    "lodash.merge": "^4.6.2",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "prettier": "latest",
