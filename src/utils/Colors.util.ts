@@ -1,13 +1,19 @@
 import TailwindColors from 'tailwindcss/colors';
 import { formatHex, formatHex8, formatRgb, formatHsl, formatCss } from 'culori';
 
-const convertColor = (value: string) => ({
-  hex: formatHex(value) ?? '',
-  hex8: formatHex8(value) ?? '',
-  rgb: formatRgb(value) ?? '',
-  hsl: formatHsl(value) ?? '',
-  css: formatCss(value) ?? ''
-});
+const convertColor = (value: string) => {
+  const hex = formatHex(value) ?? '';
+
+  return {
+    // eslint-disable-next-line no-restricted-syntax
+    dec: parseInt(hex.slice(1), 16),
+    hex,
+    hex8: formatHex8(value) ?? '',
+    rgb: formatRgb(value) ?? '',
+    hsl: formatHsl(value) ?? '',
+    css: formatCss(value) ?? ''
+  };
+};
 
 const mapColors = (color: 'red' | 'orange' | 'amber' | 'yellow' | 'lime' | 'green' | 'emerald' | 'teal' | 'cyan' | 'sky' | 'blue' | 'indigo' | 'violet' | 'purple' | 'fuchsia' | 'pink' | 'rose' | 'slate' | 'gray' | 'zinc' | 'neutral' | 'stone') => ({
   50: convertColor(TailwindColors[color][50]),
