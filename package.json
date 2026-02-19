@@ -20,7 +20,7 @@
     "culori": "^4.0.2",
     "dayjs": "^1.11.19",
     "lodash.merge": "^4.6.2",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.2.0"
   },
   "devDependencies": {
     "prettier": "latest",
