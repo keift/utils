@@ -5,9 +5,9 @@
   "license": "MIT",
   "homepage": "https://github.com/keift/utils",
   "bugs": "https://github.com/keift/utils/issues",
-  "main": "./dist/main.js",
+  "main": "./dist/main.cjs",
   "module": "./dist/main.mjs",
-  "types": "./dist/main.d.ts",
+  "types": "./dist/main.d.mts",
   "scripts": {
     "tests": "bun run lint && bun test",
     "build": "tsdown",
