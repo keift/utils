@@ -1,21 +1,21 @@
 import TailwindColors from 'tailwindcss/colors';
 import { formatHex, formatHex8, formatRgb, formatHsl, formatCss } from 'culori';
 
-const convertColor = (value: string) => {
-  const hex = formatHex(value) ?? '';
-
+const convertColor = (color: string) => {
   return {
     // eslint-disable-next-line no-restricted-syntax
-    dec: parseInt(hex.slice(1), 16),
-    hex,
-    hex8: formatHex8(value) ?? '',
-    rgb: formatRgb(value) ?? '',
-    hsl: formatHsl(value) ?? '',
-    css: formatCss(value) ?? ''
+    dec: parseInt(formatHex(color)?.slice(1) ?? '', 16),
+    hex: formatHex(color)?.slice(1) ?? '',
+    hex8: formatHex8(color)?.slice(1) ?? '',
+    rgb: formatRgb(color)?.split('(')[1].split(')')[0] ?? '',
+    hsl: formatHsl(color)?.split('(')[1].split(')')[0] ?? '',
+    oklch: formatCss(color)?.split('(')[1].split(')')[0].replaceAll(' ', ', ') ?? ''
   };
 };
 
-const mapColors = (color: 'red' | 'orange' | 'amber' | 'yellow' | 'lime' | 'green' | 'emerald' | 'teal' | 'cyan' | 'sky' | 'blue' | 'indigo' | 'violet' | 'purple' | 'fuchsia' | 'pink' | 'rose' | 'slate' | 'gray' | 'zinc' | 'neutral' | 'stone') => ({
+type Color = 'red' | 'orange' | 'amber' | 'yellow' | 'lime' | 'green' | 'emerald' | 'teal' | 'cyan' | 'sky' | 'blue' | 'indigo' | 'violet' | 'purple' | 'fuchsia' | 'pink' | 'rose' | 'slate' | 'gray' | 'zinc' | 'neutral' | 'stone' | 'taupe' | 'mauve' | 'mist' | 'olive';
+
+const mapColor = (color: Color) => ({
   50: convertColor(TailwindColors[color][50]),
   100: convertColor(TailwindColors[color][100]),
   200: convertColor(TailwindColors[color][200]),
@@ -30,26 +30,30 @@ const mapColors = (color: 'red' | 'orange' | 'amber' | 'yellow' | 'lime' | 'gree
 });
 
 export const Colors = {
-  red: mapColors('red'),
-  orange: mapColors('orange'),
-  amber: mapColors('amber'),
-  yellow: mapColors('yellow'),
-  lime: mapColors('lime'),
-  green: mapColors('green'),
-  emerald: mapColors('emerald'),
-  teal: mapColors('teal'),
-  cyan: mapColors('cyan'),
-  sky: mapColors('sky'),
-  blue: mapColors('blue'),
-  indigo: mapColors('indigo'),
-  violet: mapColors('violet'),
-  purple: mapColors('purple'),
-  fuchsia: mapColors('fuchsia'),
-  pink: mapColors('pink'),
-  rose: mapColors('rose'),
-  slate: mapColors('slate'),
-  gray: mapColors('gray'),
-  zinc: mapColors('zinc'),
-  neutral: mapColors('neutral'),
-  stone: mapColors('stone')
+  red: mapColor('red'),
+  orange: mapColor('orange'),
+  amber: mapColor('amber'),
+  yellow: mapColor('yellow'),
+  lime: mapColor('lime'),
+  green: mapColor('green'),
+  emerald: mapColor('emerald'),
+  teal: mapColor('teal'),
+  cyan: mapColor('cyan'),
+  sky: mapColor('sky'),
+  blue: mapColor('blue'),
+  indigo: mapColor('indigo'),
+  violet: mapColor('violet'),
+  purple: mapColor('purple'),
+  fuchsia: mapColor('fuchsia'),
+  pink: mapColor('pink'),
+  rose: mapColor('rose'),
+  slate: mapColor('slate'),
+  gray: mapColor('gray'),
+  zinc: mapColor('zinc'),
+  neutral: mapColor('neutral'),
+  stone: mapColor('stone'),
+  taupe: mapColor('taupe'),
+  mauve: mapColor('mauve'),
+  mist: mapColor('mist'),
+  olive: mapColor('olive')
 };
