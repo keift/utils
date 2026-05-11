@@ -1,9 +1,16 @@
 import Package from '../package.json';
 
-if (Package.dependencies.tailwindcss !== 'latest') throw new Error('❌ Error: tailwindcss');
+const dev_dependencies = {
+  prettier: 'latest',
+  rulint: 'latest',
+  tailwindcss: 'latest',
+  tsdown: 'latest'
+};
 
-if (Package.devDependencies.prettier !== 'latest') throw new Error('❌ Error: prettier');
-if (Package.devDependencies.rulint !== 'latest') throw new Error('❌ Error: rulint');
-if (Package.devDependencies.tsdown !== 'latest') throw new Error('❌ Error: tsdown');
+for (const [_dependency, version] of Object.entries(dev_dependencies)) {
+  const dependency = _dependency as keyof typeof dev_dependencies;
+
+  if (Package.devDependencies[dependency] !== version) throw new Error(`❌ Error: ${dependency}`);
+}
 
 console.log('✅ Success');

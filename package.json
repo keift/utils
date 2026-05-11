@@ -1,6 +1,6 @@
 {
   "name": "@keift/utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Many useful tools.",
   "license": "MIT",
   "homepage": "https://github.com/keift/utils",
@@ -19,12 +19,12 @@
     "@types/lodash.merge": "^4.6.9",
     "culori": "^4.0.2",
     "dayjs": "^1.11.20",
-    "lodash.merge": "^4.6.2",
-    "tailwindcss": "latest"
+    "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
     "prettier": "latest",
     "rulint": "latest",
+    "tailwindcss": "latest",
     "tsdown": "latest"
   },
   "repository": {
