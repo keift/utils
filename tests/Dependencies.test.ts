@@ -4,7 +4,8 @@ const dev_dependencies = {
   prettier: 'latest',
   rulint: 'latest',
   tailwindcss: 'latest',
-  tsdown: 'latest'
+  tsdown: 'latest',
+  unrun: 'latest'
 };
 
 for (const [_dependency, version] of Object.entries(dev_dependencies)) {
