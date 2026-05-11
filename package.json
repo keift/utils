@@ -25,8 +25,7 @@
     "prettier": "latest",
     "rulint": "latest",
     "tailwindcss": "latest",
-    "tsdown": "latest",
-    "unrun": "latest"
+    "tsdown": "latest"
   },
   "repository": {
     "type": "git",
