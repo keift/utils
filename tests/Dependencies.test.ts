@@ -3,7 +3,6 @@ import Package from '../package.json';
 const dev_dependencies = {
   prettier: 'latest',
   rulint: 'latest',
-  tailwindcss: 'latest',
   tsdown: 'latest'
 };
 
