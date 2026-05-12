@@ -3,7 +3,9 @@ import Package from '../package.json';
 const dev_dependencies = {
   prettier: 'latest',
   rulint: 'latest',
-  tsdown: 'latest'
+  tailwindcss: 'latest',
+  tsdown: 'latest',
+  unrun: 'latest'
 };
 
 for (const [_dependency, version] of Object.entries(dev_dependencies)) {

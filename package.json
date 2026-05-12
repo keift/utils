@@ -19,13 +19,14 @@
     "@types/lodash.merge": "^4.6.9",
     "culori": "^4.0.2",
     "dayjs": "^1.11.20",
-    "lodash.merge": "^4.6.2",
-    "tailwindcss": "latest"
+    "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
     "prettier": "latest",
     "rulint": "latest",
-    "tsdown": "latest"
+    "tailwindcss": "latest",
+    "tsdown": "latest",
+    "unrun": "latest"
   },
   "repository": {
     "type": "git",
