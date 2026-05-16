@@ -1,3 +1,3 @@
-export * from './exports/Utils.export';
+export * from './exports/utils';
 
-export type * from './exports/Types.export';
+export type * from './exports/types';

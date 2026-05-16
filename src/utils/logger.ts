@@ -1,11 +1,11 @@
 import Dayjs from 'dayjs';
 import merge from 'lodash.merge';
 
-import { Styles } from './Styles.util';
+import { Styles } from './styles';
 
-import { LoggerOptionsDefault } from '../defaults/LoggerOptions.default';
+import { LoggerOptionsDefault } from '../defaults/logger-options';
 
-import type { LoggerOptions } from '../types/LoggerOptions.type';
+import type { LoggerOptions } from '../types/logger-options';
 
 export class Logger {
   private readonly options: LoggerOptions;
