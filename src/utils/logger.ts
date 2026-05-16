@@ -3,9 +3,9 @@ import merge from 'lodash.merge';
 
 import { Styles } from './styles';
 
-import { LoggerOptionsDefault } from '../defaults/logger-options';
+import { LoggerOptionsDefault } from '../defaults/logger_options';
 
-import type { LoggerOptions } from '../types/logger-options';
+import type { LoggerOptions } from '../types/logger_options';
 
 export class Logger {
   private readonly options: LoggerOptions;
