@@ -1,6 +1,6 @@
 <div align="center">
   <br/>
-  <img src="https://raw.github.com/keift/cdn/refs/heads/main/images/keift/logos/raw/blue.png" width="1000px"/>
+  <img src="https://raw.github.com/keift/cdn/refs/heads/main/images/keift/logos/raw/blue.png" width="100px"/>
   <h1>Utils</h1>
   <br/>
   <br/>
