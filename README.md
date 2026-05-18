@@ -1,7 +1,6 @@
 <div align="center">
   <br/>
-  <img src="https://raw.github.com/keift/cdn/refs/heads/main/images/keift/logos/raw/blue.png" width="100px"/> 
-  <big>Utils</big>
+  <img src="https://raw.github.com/keift/cdn/refs/heads/main/images/keift/logos/raw/blue.png" width="100px"/> Utils
   <br/>
   <br/>
   <img src="https://img.shields.io/npm/v/@keift/utils?label=version&color=615fff"/>
