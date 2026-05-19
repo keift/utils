@@ -144,6 +144,8 @@ Get [Tailwind CSS](https://tailwindcss.com/docs/colors)'s color palette in multi
 > */
 > ```
 
+<br/>
+
 `Styles`
 
 Use ANSI codes for colors in your terminals.
