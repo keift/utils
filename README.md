@@ -41,7 +41,7 @@ Many useful tools.
 
 ## Features
 
-- 
+-
 
 ## Installation
 
