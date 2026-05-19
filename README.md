@@ -1,3 +1,10 @@
+[LoggerOptionsDefault]: ./src/defaults/logger_options.ts
+
+<!---->
+
+[LoggerOptions]: ./src/types/logger_options.ts
+[StrictOmit]: ./src/types/strict_omit.ts
+
 <div align="center">
   <br/>
   <img src="https://raw.github.com/keift/cdn/refs/heads/main/images/keift/logos/raw/blue.png" width="175px"/> <b>Utils</b>
@@ -30,17 +37,11 @@
 
 ## About
 
-Short yet unique IDs.
+Many useful tools.
 
 ## Features
 
-- Short yet unique IDs
-- The possibility of collision is impossible
-- Suitable for distributed systems
-- Suitable for sorting and database indexes
-- Snowflake IDs can be generated, each one is timestamp based
-- Increment IDs can be generated, increasing each time they are generated
-- Symbolic IDs can be generated, similar to YouTube's video identities
+- 
 
 ## Installation
 
@@ -121,7 +122,7 @@ Colorful logs that include the time.
 > ScopedLog.error('This is a error.'); // Keift » [2025-01-01 00:00:00 ERR] This is a error.
 > ```
 
-# Constants
+### Constants
 
 `Colors`
 
