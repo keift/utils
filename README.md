@@ -41,7 +41,10 @@ Many useful tools.
 
 ## Features
 
--
+- Colorful logs that include the time
+- Get [Tailwind CSS](https://tailwindcss.com/docs/colors)'s color palette in multiple formats
+- ANSI codes for colors in your terminals
+- Strict version of the Omit type
 
 ## Installation
 
