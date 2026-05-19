@@ -107,8 +107,6 @@ Colorful logs that include the time.
 > | ---------- | --------------- | ---------------------- | ---------------------- |
 > | `options?` | [LoggerOptions] | [LoggerOptionsDefault] | Constructor's options. |
 >
-> returns String
->
 > Example:
 >
 > ```typescript
