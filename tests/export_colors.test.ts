@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
-import { Colors } from '../src/main';
+import { colors } from '../src/main';
 
-const colors_file = `${JSON.stringify(Colors, undefined, 2)}
+const colors_file = `${JSON.stringify(colors, undefined, 2)}
 `;
 
 await fs.writeFile('./assets/colors.json', colors_file);
