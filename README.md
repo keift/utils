@@ -126,7 +126,7 @@ Colorful logs that include the time.
 
 `colors`
 
-Get [Tailwind CSS](https://tailwindcss.com/docs/colors)'s color palette in multiple formats.
+[Tailwind CSS](https://tailwindcss.com/docs/colors)'s color palette in multiple formats.
 
 > Example:
 >
@@ -148,7 +148,7 @@ Get [Tailwind CSS](https://tailwindcss.com/docs/colors)'s color palette in multi
 
 `styles`
 
-Use ANSI codes for colors in your terminals.
+ANSI codes for colors in your terminals.
 
 > Example:
 >
