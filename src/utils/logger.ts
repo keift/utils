@@ -1,7 +1,7 @@
-import Dayjs from 'dayjs';
+import dayjs from 'dayjs';
 import merge from 'lodash.merge';
 
-import { Styles } from './styles';
+import { styles } from './styles';
 
 import { LoggerOptionsDefault } from '../defaults/logger_options';
 
@@ -15,14 +15,14 @@ export class Logger {
   }
 
   public info(message: string): void {
-    console.info(`${this.options.scope !== undefined ? `${Styles.fg.cyan}${this.options.scope} ${Styles.fg.blue}» ` : ''}${Styles.fg.gray}[${Dayjs().format('YYYY-MM-DD HH:mm:ss')} ${Styles.fg.green}INF${Styles.fg.gray}] ${Styles.fg.green}${message}`, Styles.reset);
+    console.info(`${this.options.scope !== undefined ? `${styles.fg.cyan}${this.options.scope} ${styles.fg.blue}» ` : ''}${styles.fg.gray}[${dayjs().format('YYYY-MM-DD HH:mm:ss')} ${styles.fg.green}INF${styles.fg.gray}] ${styles.fg.green}${message}`, styles.reset);
   }
 
   public warn(message: string): void {
-    console.warn(`${this.options.scope !== undefined ? `${Styles.fg.cyan}${this.options.scope} ${Styles.fg.blue}» ` : ''}${Styles.fg.gray}[${Dayjs().format('YYYY-MM-DD HH:mm:ss')} ${Styles.fg.yellow}WRN${Styles.fg.gray}] ${Styles.fg.yellow}${message}`, Styles.reset);
+    console.warn(`${this.options.scope !== undefined ? `${styles.fg.cyan}${this.options.scope} ${styles.fg.blue}» ` : ''}${styles.fg.gray}[${dayjs().format('YYYY-MM-DD HH:mm:ss')} ${styles.fg.yellow}WRN${styles.fg.gray}] ${styles.fg.yellow}${message}`, styles.reset);
   }
 
   public error(message: string): void {
-    console.error(`${this.options.scope !== undefined ? `${Styles.fg.cyan}${this.options.scope} ${Styles.fg.blue}» ` : ''}${Styles.fg.gray}[${Dayjs().format('YYYY-MM-DD HH:mm:ss')} ${Styles.fg.red}ERR${Styles.fg.gray}] ${Styles.fg.red}${message}`, Styles.reset);
+    console.error(`${this.options.scope !== undefined ? `${styles.fg.cyan}${this.options.scope} ${styles.fg.blue}» ` : ''}${styles.fg.gray}[${dayjs().format('YYYY-MM-DD HH:mm:ss')} ${styles.fg.red}ERR${styles.fg.gray}] ${styles.fg.red}${message}`, styles.reset);
   }
 }

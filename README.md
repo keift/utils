@@ -81,9 +81,9 @@ Briefly as follows.
 │   ├── warn(message)
 │   └── error(message)
 │
-├── Colors
+├── colors
 │
-├── Styles
+├── styles
 │
 ├── type LoggerOptions
 └── type StrictOmit
@@ -94,7 +94,7 @@ Briefly as follows.
 Briefly as follows.
 
 ```typescript
-import { Logger, Colors, Styles, type StrictOmit } from '@keift/utils';
+import { Logger, colors, styles, type StrictOmit } from '@keift/utils';
 ```
 
 ### Constructors
@@ -124,14 +124,14 @@ Colorful logs that include the time.
 
 ### Constants
 
-`Colors`
+`colors`
 
 Get [Tailwind CSS](https://tailwindcss.com/docs/colors)'s color palette in multiple formats.
 
 > Example:
 >
 > ```typescript
-> console.log(Colors.red['500']);
+> console.log(colors.red['500']);
 > /*
 >   {
 >     dec: 16460854,
@@ -146,14 +146,14 @@ Get [Tailwind CSS](https://tailwindcss.com/docs/colors)'s color palette in multi
 
 <br/>
 
-`Styles`
+`styles`
 
 Use ANSI codes for colors in your terminals.
 
 > Example:
 >
 > ```typescript
-> console.log(`${Styles.fg.red}This text is red`, Styles.reset);
+> console.log(`${styles.fg.red}This text is red`, styles.reset);
 > ```
 
 ### Types

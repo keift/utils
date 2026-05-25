@@ -1,3 +1,3 @@
-export { Colors } from '../utils/colors';
+export { colors } from '../utils/colors';
 export { Logger } from '../utils/logger';
-export { Styles } from '../utils/styles';
+export { styles } from '../utils/styles';

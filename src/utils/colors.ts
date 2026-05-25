@@ -1,4 +1,4 @@
-import TailwindColors from 'tailwindcss/colors';
+import tailwindcss_colors from 'tailwindcss/colors';
 import { formatHex, formatHex8, formatRgb, formatHsl, formatCss } from 'culori';
 
 const convert_color = (color: string) => {
@@ -16,20 +16,20 @@ const convert_color = (color: string) => {
 type Color = 'red' | 'orange' | 'amber' | 'yellow' | 'lime' | 'green' | 'emerald' | 'teal' | 'cyan' | 'sky' | 'blue' | 'indigo' | 'violet' | 'purple' | 'fuchsia' | 'pink' | 'rose' | 'slate' | 'gray' | 'zinc' | 'neutral' | 'stone' | 'taupe' | 'mauve' | 'mist' | 'olive';
 
 const map_color = (color: Color) => ({
-  50: convert_color(TailwindColors[color][50]),
-  100: convert_color(TailwindColors[color][100]),
-  200: convert_color(TailwindColors[color][200]),
-  300: convert_color(TailwindColors[color][300]),
-  400: convert_color(TailwindColors[color][400]),
-  500: convert_color(TailwindColors[color][500]),
-  600: convert_color(TailwindColors[color][600]),
-  700: convert_color(TailwindColors[color][700]),
-  800: convert_color(TailwindColors[color][800]),
-  900: convert_color(TailwindColors[color][900]),
-  950: convert_color(TailwindColors[color][950])
+  50: convert_color(tailwindcss_colors[color][50]),
+  100: convert_color(tailwindcss_colors[color][100]),
+  200: convert_color(tailwindcss_colors[color][200]),
+  300: convert_color(tailwindcss_colors[color][300]),
+  400: convert_color(tailwindcss_colors[color][400]),
+  500: convert_color(tailwindcss_colors[color][500]),
+  600: convert_color(tailwindcss_colors[color][600]),
+  700: convert_color(tailwindcss_colors[color][700]),
+  800: convert_color(tailwindcss_colors[color][800]),
+  900: convert_color(tailwindcss_colors[color][900]),
+  950: convert_color(tailwindcss_colors[color][950])
 });
 
-export const Colors = {
+export const colors = {
   red: map_color('red'),
   orange: map_color('orange'),
   amber: map_color('amber'),
