@@ -1,17 +1,15 @@
 import tailwindcss_colors from 'tailwindcss/colors';
 import { formatHex, formatHex8, formatRgb, formatHsl, formatCss } from 'culori';
 
-const convert_color = (color: string) => {
-  return {
-    // eslint-disable-next-line no-restricted-syntax
-    dec: parseInt(formatHex(color)?.slice(1) ?? '', 16),
-    hex: formatHex(color)?.slice(1) ?? '',
-    hex8: formatHex8(color)?.slice(1) ?? '',
-    rgb: formatRgb(color)?.split('(')[1].split(')')[0] ?? '',
-    hsl: formatHsl(color)?.split('(')[1].split(')')[0] ?? '',
-    oklch: formatCss(color)?.split('(')[1].split(')')[0].replaceAll(' ', ', ') ?? ''
-  };
-};
+const convert_color = (color: string) => ({
+  // eslint-disable-next-line no-restricted-syntax
+  dec: parseInt(formatHex(color)?.slice(1) ?? '', 16),
+  hex: formatHex(color)?.slice(1) ?? '',
+  hex8: formatHex8(color)?.slice(1) ?? '',
+  rgb: formatRgb(color)?.split('(')[1].split(')')[0] ?? '',
+  hsl: formatHsl(color)?.split('(')[1].split(')')[0] ?? '',
+  oklch: formatCss(color)?.split('(')[1].split(')')[0].replaceAll(' ', ', ') ?? ''
+});
 
 type Color = 'red' | 'orange' | 'amber' | 'yellow' | 'lime' | 'green' | 'emerald' | 'teal' | 'cyan' | 'sky' | 'blue' | 'indigo' | 'violet' | 'purple' | 'fuchsia' | 'pink' | 'rose' | 'slate' | 'gray' | 'zinc' | 'neutral' | 'stone' | 'taupe' | 'mauve' | 'mist' | 'olive';
 
