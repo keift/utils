@@ -110,16 +110,16 @@ Colorful logs that include the time.
 > Example:
 >
 > ```typescript
-> const Log = new Logger();
-> const ScopedLog = new Logger({ scope: 'Keift' });
+> const logger = new Logger();
+> const scoped_logger = new Logger({ scope: 'Keift' });
 >
-> Log.info('This is a info.'); // [2025-01-01 00:00:00 INF] This is a info.
-> Log.warn('This is a warn.'); // [2025-01-01 00:00:00 WRN] This is a warn.
-> Log.error('This is a error.'); // [2025-01-01 00:00:00 ERR] This is a error.
+> logger.info('This is a info.'); // [2025-01-01 00:00:00 INF] This is a info.
+> logger.warn('This is a warn.'); // [2025-01-01 00:00:00 WRN] This is a warn.
+> logger.error('This is a error.'); // [2025-01-01 00:00:00 ERR] This is a error.
 >
-> ScopedLog.info('This is a info.'); // Keift » [2025-01-01 00:00:00 INF] This is a info.
-> ScopedLog.warn('This is a warn.'); // Keift » [2025-01-01 00:00:00 WRN] This is a warn.
-> ScopedLog.error('This is a error.'); // Keift » [2025-01-01 00:00:00 ERR] This is a error.
+> scoped_logger.info('This is a info.'); // Keift » [2025-01-01 00:00:00 INF] This is a info.
+> scoped_logger.warn('This is a warn.'); // Keift » [2025-01-01 00:00:00 WRN] This is a warn.
+> scoped_logger.error('This is a error.'); // Keift » [2025-01-01 00:00:00 ERR] This is a error.
 > ```
 
 ### Constants
