@@ -5,9 +5,18 @@
   "license": "MIT",
   "homepage": "https://github.com/keift/utils",
   "bugs": "https://github.com/keift/utils/issues",
-  "main": "./dist/main.cjs",
-  "module": "./dist/main.mjs",
-  "types": "./dist/main.d.mts",
+  "exports": {
+    ".": {
+      "import": "./dist/main.mjs",
+      "require": "./dist/main.cjs",
+      "types": "./dist/main.d.mts"
+    },
+    "./types": {
+      "import": "./dist/types.mjs",
+      "require": "./dist/types.cjs",
+      "types": "./dist/types.d.mts"
+    }
+  },
   "scripts": {
     "tests": "bun run lint && bun test",
     "retouch": "bun run prettier",
@@ -19,7 +28,7 @@
     "@types/culori": "^4.0.1",
     "@types/lodash.merge": "^4.6.9",
     "culori": "^4.0.2",
-    "dayjs": "^1.11.21",
+    "dayjs": "^1.11.23",
     "lodash.merge": "^4.6.2"
   },
   "devDependencies": {

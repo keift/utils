@@ -3,15 +3,15 @@ import merge from 'lodash.merge';
 
 import { styles } from './styles';
 
-import { LoggerOptionsDefault } from '../defaults/logger_options';
+import { logger_options } from '../defaults/logger_options';
 
 import type { LoggerOptions } from '../types/logger_options';
 
 export class Logger {
   private readonly options: LoggerOptions;
 
-  public constructor(options: LoggerOptions = LoggerOptionsDefault) {
-    this.options = merge({}, LoggerOptionsDefault, options);
+  public constructor(options: LoggerOptions = logger_options) {
+    this.options = merge({}, logger_options, options);
   }
 
   public info(message: string): void {

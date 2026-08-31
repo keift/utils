@@ -1,4 +1,4 @@
-[LoggerOptionsDefault]: ./src/defaults/logger_options.ts
+[logger_options]: ./src/defaults/logger_options.ts
 
 <!---->
 
@@ -103,9 +103,9 @@ import { Logger, colors, styles, type StrictOmit } from '@keift/utils';
 
 Colorful logs that include the time.
 
-> | Parameter  | Type            | Default                | Description            |
-> | ---------- | --------------- | ---------------------- | ---------------------- |
-> | `options?` | [LoggerOptions] | [LoggerOptionsDefault] | Constructor's options. |
+> | Parameter  | Type            | Default          | Description            |
+> | ---------- | --------------- | ---------------- | ---------------------- |
+> | `options?` | [LoggerOptions] | [logger_options] | Constructor's options. |
 >
 > Example:
 >
