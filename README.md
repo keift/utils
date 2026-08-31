@@ -83,7 +83,9 @@ Briefly as follows.
 │
 ├── colors
 │
-├── styles
+└── styles
+
+@keift/utils/types
 │
 ├── type LoggerOptions
 └── type StrictOmit
