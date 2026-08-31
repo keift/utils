@@ -96,7 +96,8 @@ Briefly as follows.
 Briefly as follows.
 
 ```typescript
-import { Logger, colors, styles, type StrictOmit } from '@keift/utils';
+import { Logger, colors, styles } from '@keift/utils';
+import type { StrictOmit } from '@keift/utils/types';
 ```
 
 ### Constructors
