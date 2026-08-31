@@ -1,6 +1,6 @@
 {
   "name": "@keift/utils",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Many useful tools.",
   "license": "MIT",
   "homepage": "https://github.com/keift/utils",
@@ -8,12 +8,10 @@
   "exports": {
     ".": {
       "import": "./dist/main.mjs",
-      "require": "./dist/main.cjs",
       "types": "./dist/main.d.mts"
     },
     "./types": {
       "import": "./dist/types.mjs",
-      "require": "./dist/types.cjs",
       "types": "./dist/types.d.mts"
     }
   },
@@ -21,8 +19,8 @@
     "tests": "bun run lint && bun test",
     "retouch": "bun run prettier",
     "build": "tsdown",
-    "prettier": "prettier --write ./",
-    "lint": "eslint ./"
+    "lint": "eslint ./",
+    "prettier": "prettier --write ./"
   },
   "dependencies": {
     "@types/culori": "^4.0.1",
