@@ -4,7 +4,7 @@
   "description": "Many useful tools.",
   "license": "MIT",
   "homepage": "https://github.com/keift/utils",
-  "bugs": "https://github.com/keift/utils/issues",
+  "repository": "https://github.com/keift/utils",
   "scripts": {
     "tests": "bun run lint && bun test",
     "retouch": "bun run prettier",
@@ -35,10 +35,6 @@
     "tailwindcss": "latest",
     "tsdown": "latest",
     "unrun": "latest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/keift/utils"
   },
   "keywords": [
     "utils"
